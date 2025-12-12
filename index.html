@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keysiz Köpek Cinsleri Uygulaması</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; padding-top: 50px; background-color: #f4f4f9; }
+        h1 { color: #333; }
+        #dog-image { max-width: 90%; height: auto; border-radius: 8px; margin-top: 20px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+        .controls { margin-bottom: 20px; }
+        select, button { 
+            padding: 10px 15px; 
+            font-size: 16px; 
+            margin: 5px;
+            border-radius: 5px;
+        }
+        button { 
+            background-color: #007bff; 
+            color: white; 
+            border: none; 
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Belirli Bir Cinsten Rastgele Köpek</h1>
+    
+    <div class="controls">
+        <label for="breed-select">Cins Seçin:</label>
+        <select id="breed-select">
+            <option value="random">Rastgele Cins</option>
+        </select>
+        <button id="fetch-dog-btn">Resmi Getir</button>
+    </div>
+    
+    <div id="dog-container">
+        <img id="dog-image" src="" alt="Köpek Resmi Yükleniyor..." width="400">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
